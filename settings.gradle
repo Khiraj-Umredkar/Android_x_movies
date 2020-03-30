@@ -1,0 +1,2 @@
+rootProject.name='AndroidX Movies'
+include ':app'
