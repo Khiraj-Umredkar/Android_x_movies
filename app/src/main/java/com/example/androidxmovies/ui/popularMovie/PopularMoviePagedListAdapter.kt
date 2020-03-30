@@ -31,11 +31,10 @@ class PopularMoviePagedListAdapter(public val context: Context):PagedListAdapter
         val view:View
 
         if(viewType == MOVIE_VIEW_TYPE){
-            view = layoutInflater.inflate(R.layout.movie_list_item,parent,false)
-
+            view = layoutInflater.inflate(R.layout.movie_list_item, parent,false)
             return MovieItemViewHolder(view)
         }else{
-            view = layoutInflater.inflate(R.layout.network_state_item , parent ,false)
+            view = layoutInflater.inflate(R.layout.network_state_item ,parent ,false)
             return MovieItemViewHolder(view)
         }
 
